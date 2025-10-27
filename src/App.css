@@ -1,28 +1,58 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9fafb;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f6f7f8;
   margin: 0;
+  padding: 20px;
 }
 
-.navbar {
-  background-color: #4e6ef2;
-  padding: 1rem;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
 
-.navbar a {
+h1 {
+  color: #333;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #0077cc;
   color: white;
-  text-decoration: none;
-  font-weight: 600;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.pet-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
 }
 
 .pet-card {
   background: white;
-  border-radius: 12px;
-  padding: 1rem;
-  margin: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.pet-card img {
+  width: 100%;
+  border-radius: 10px;
 }

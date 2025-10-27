@@ -1,0 +1,28 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "name": "Buddy",
+      "type": "Dog",
+      "image": "https://placedog.net/400/300",
+      "age": 3,
+      "description": "A playful golden retriever who loves to fetch."
+    },
+    {
+      "id": 2,
+      "name": "Milo",
+      "type": "Cat",
+      "image": "https://placekitten.com/400/300",
+      "age": 2,
+      "description": "A calm cat who enjoys sunny naps."
+    },
+    {
+      "id": 3,
+      "name": "Luna",
+      "type": "Rabbit",
+      "image": "https://placebear.com/400/300",
+      "age": 1,
+      "description": "Curious and energetic bunny looking for a loving home."
+    }
+  ]
+}
