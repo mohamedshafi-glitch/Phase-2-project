@@ -1,7 +1,4 @@
-import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import PetList from "./components/PetList";
+import AddPetForm from "./components/AddPetForm";
 
 function App() {
   const [pets, setPets] = useState([]);
@@ -12,6 +9,10 @@ function App() {
       .then((data) => setPets(data));
   }, []);
 
+  function addPet(newPet) {
+    setPets([...pets, newPet]);
+  }
+
   return (
     <Router>
       <div className="App">
@@ -19,10 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<h1>🐾 Welcome to PetPal!</h1>} />
           <Route path="/pets" element={<PetList pets={pets} />} />
+          <Route path="/add-pet" element={<AddPetForm addPet={addPet} />} />
         </Routes>
       </div>
     </Router>
   );
 }
-
-export default App;
